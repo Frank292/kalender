@@ -1,0 +1,27 @@
+h1 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "header header"
+                         "calender info"
+                         "calender history"
+                         "footer footer";                              
+}
+body > header {
+    grid-area: header;
+}
+
+#calender {
+    grid-area: kalender;
+}
+#info {
+    grid-area: info;
+}
+#history {
+    grid-area: history;
+}
+
